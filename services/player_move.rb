@@ -23,7 +23,7 @@ class PlayerMove
 		end
 		@board.comp[@move - 1] = @player.symbol
 	end
-
+	  # validations belong in a model, because it is asking a question about the data
 	def valid?
 		true if space_is_blank && move_within_bounds
 	end
